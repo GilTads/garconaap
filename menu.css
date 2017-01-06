@@ -1,0 +1,8 @@
+#opcao-bolos:checked ~ #menu-bebidas,
+#opcao-bebidas:checked ~ #menu-bolos {
+	display: none;
+}
+
+#opcao-bebidas:checked ~ .container-menus{
+	transform: translateX(-50%);
+}
