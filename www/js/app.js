@@ -17,7 +17,7 @@ $('.modal-trigger').leanModal();
 
 
 $('#confirmar').on('click', function(){
-    var texto ='';
+    var texto = ' ';
     $('.badge').parent().each(function(){
         var produto = this.firstChild.textContent;
         var quantidade = this.lastChild.textContent;
@@ -25,4 +25,5 @@ $('#confirmar').on('click', function(){
         
     });
     $('#resumo').text(texto);
-})
+});
+
