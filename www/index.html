@@ -13,29 +13,33 @@
         <div class="yellow darken-4 white-text valign-wrapper">
             <h5 class="titulo">Só de Cenoura</h5>
             <div>
-                <i class="material-icons white-text waves-effect waves-circle">more_vert</i>
+                <i data-activates="submenu" class="material-icons white-text waves-effect waves-circle dropdown-button">more_vert</i>
             </div>
+            <ul class="dropdown-content" id="submenu">
+                <li class="collection-item limpar black-text">Limpar</li>
+            </ul>
         </div>
         <ul class="tabs yellow darken-4">
             <li class="tab"><a href="#bolos"class="white-text waves-effect waves-light">Bolos</a></li>
             <li class="tab"><a href="#bebidas"class="white-text waves-effect waves-light">Bebidas</a></li>
         </ul>
     </div>
-    <div class="section" id="bolos">
-       <h6 class="container brown-text">Em pedaços</h6>
-            <div class="collection">
-                <a class="collection-item waves-effect black-text">Só de Cenoura</a>
-                <a class="collection-item waves-effect black-text">Chocolate</a>
-                <a class="collection-item waves-effect black-text">Com Nutella</a>
-                <a class="collection-item waves-effect black-text">Caramelo</a>
-            </div>
-        <h6 class="container brown-text">Inteiros</h6>
-            <div class="collection">
-                <a class="collection-item waves-effect black-text">Só de Cenoura</a>
-                <a class="collection-item waves-effect black-text">Chocolate</a>
-                <a class="collection-item waves-effect black-text">Com Nutella</a>
-                <a class="collection-item waves-effect black-text">Caramelo</a>
-            </div>
+    <div id="bolos" class="section">
+        <h6 class="container brown-text">Fatia</h6>
+        <div class="collection">
+            <a class="collection-item waves-effect black-text">Só de Cenoura</a>
+            <a class="collection-item waves-effect black-text">Com Nutella</a>
+            <a class="collection-item waves-effect black-text">De Brigadeiro</a>
+            <a class="collection-item waves-effect black-text">Açucarado</a>
+        </div>
+
+        <h6 class="container brown-text">Inteiro</h6>
+        <div class="collection">
+            <a class="collection-item waves-effect black-text">Só de Cenoura inteiro</a>
+            <a class="collection-item waves-effect black-text">Com Nutella inteiro</a>
+            <a class="collection-item waves-effect black-text">De Brigadeiro inteiro</a>
+            <a class="collection-item waves-effect black-text">Açucarado inteiro</a>
+        </div>
     </div>
         
     <div class="section" id="bebidas">
@@ -56,7 +60,7 @@
     </div>
     
     <div class="fixed-action-btn">
-        <a href="#confirmacao" class="btn-floating btn-large waves-effect waves-light brown modal-trigger" id="confirmar">
+        <a href="#confirmacao" id="confirmar" class="btn-floating btn-large waves-effect waves-light brown modal-trigger" >
             <i class="material-icons">done</i>
         </a>
     </div>
@@ -70,14 +74,14 @@
             <button class="btn deep-orange waves-effect waves-light modal-close">
                 Pedir
             </button>
-            <buton class="btn-flat waves-effect waves-red modal-close">
+            <buton class="btn-flat waves-effect waves-red modal-close limpar">
                 Cancelar
             </buton>
         </div>
     </div>
     
     <script src="js/jquery.min.js"></script>
-    <script src="js/materialize.js"></script>
+    <script src="js/materialize.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
